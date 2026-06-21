@@ -1,0 +1,11 @@
+{
+  "source_dirs": [
+    "/Users/aura/Documents/Everlog Export"
+  ],
+  "database_path": "/Users/aura/everlog-memory-mcp/data/index.sqlite3",
+  "allowed_extensions": [".md", ".markdown", ".txt", ".json", ".zip"],
+  "source_mode": "mixed",
+  "store_plaintext_index": false,
+  "max_entry_chars": 12000,
+  "max_results": 8
+}

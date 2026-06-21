@@ -1,0 +1,88 @@
+{
+  "title": "Demo Thinking Evolution",
+  "artifact_type": "thinking_evolution",
+  "source": "example",
+  "date_range": "2026-06-01..2026-06-01",
+  "summary": "A fake structured artifact for testing the private site store.",
+  "tags": ["demo", "growth"],
+  "body_markdown": "This is a fake artifact. It does not contain real diary content.",
+  "model": {
+    "threads": [
+      {
+        "title": "Private growth map",
+        "summary": "The artifact is becoming a structured private site record.",
+        "movement": "Moving from one-off text toward reusable model objects.",
+        "status": "active",
+        "confidence": "high",
+        "signals": ["structured artifact", "private site", "evidence layer"],
+        "evidence": [
+          {
+            "date": "2026-06-01",
+            "entry_id": "entry-demo-1",
+            "snippet": "local memory layer",
+            "note": "Fake evidence from the sample entry."
+          }
+        ],
+        "next_step": "Compare this thread with the next saved artifact."
+      }
+    ],
+    "tensions": [],
+    "beliefs": [],
+    "seeds": [
+      {
+        "title": "Agent-maintained self-model",
+        "summary": "A product idea for turning private journals into structured local memory.",
+        "private_public": "public-after-sanitized",
+        "next_step": "Write a README story without private diary details."
+      }
+    ],
+    "decisions": [],
+    "questions": [
+      {
+        "title": "What should the next artifact track?",
+        "status": "open"
+      }
+    ]
+  },
+  "dimensions": [
+    {
+      "name": "Project Direction",
+      "state": "The artifact is becoming a structured private site record.",
+      "trajectory": "Moving from one-off text toward reusable claims and evidence.",
+      "status": "active",
+      "confidence": "high",
+      "signals": ["structured artifact", "private site", "evidence layer"],
+      "evidence": [
+        {
+          "date": "2026-06-01",
+          "entry_id": "entry-demo-1",
+          "snippet": "local memory layer",
+          "note": "Fake evidence from the sample entry."
+        }
+      ],
+      "questions": ["How should the next artifact extend this dimension?"]
+    }
+  ],
+  "claims": [
+    {
+      "claim": "A useful reflection should be saved as structure, not only prose.",
+      "interpretation": "The UI can render claims, evidence, and questions consistently.",
+      "confidence": "high",
+      "evidence": [
+        {
+          "date": "2026-06-01",
+          "entry_id": "entry-demo-1",
+          "snippet": "local memory layer",
+          "note": "Fake evidence from the sample entry."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "question": "What should the next artifact track?",
+      "status": "open",
+      "note": "Demo question."
+    }
+  ]
+}

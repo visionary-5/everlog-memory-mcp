@@ -1,0 +1,36 @@
+{
+  "version": "1",
+  "adaptiveImageGlyphs": [],
+  "devices": [],
+  "journals": [
+    {
+      "identifier": "journal-demo",
+      "name": "Demo Journal",
+      "color": 0,
+      "icon": "book",
+      "dateCreated": "2026-06-01T00:00:00Z",
+      "device": "demo"
+    }
+  ],
+  "places": [],
+  "prompts": [],
+  "entries": [
+    {
+      "identifier": "entry-demo-1",
+      "content": "I want a local memory layer that can cite evidence and avoid pretending certainty.",
+      "date": "2026-06-01T10:00:00Z",
+      "dateCreated": "2026-06-01T10:00:00Z",
+      "dateModified": "2026-06-01T10:05:00Z",
+      "device": "demo",
+      "isBookmarked": "false",
+      "journal": "journal-demo",
+      "attachments": [],
+      "minutesFromGMT": 480,
+      "parent": "",
+      "place": "",
+      "timeTyping": 60,
+      "weather": {}
+    }
+  ]
+}
+

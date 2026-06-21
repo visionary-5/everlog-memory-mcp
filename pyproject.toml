@@ -1,0 +1,17 @@
+[project]
+name = "everlog-memory-mcp"
+version = "0.1.0"
+description = "Local-first MCP server for querying Everlog Markdown/TXT exports."
+readme = "README.md"
+requires-python = ">=3.13"
+license = "MIT"
+authors = [
+  { name = "aura" }
+]
+
+[project.scripts]
+everlog-memory = "everlog_memory_mcp.cli:main"
+
+[tool.ruff]
+line-length = 100
+

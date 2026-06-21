@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Everlog Memory</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Navigation">
+        <div class="brand">
+          <div class="brand-mark">EM</div>
+          <div>
+            <div class="brand-title">Everlog Memory</div>
+            <div class="brand-subtitle">private self-model</div>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <button class="nav-button active" data-view="map">Growth Map</button>
+          <button class="nav-button" data-view="threads">Threads</button>
+          <button class="nav-button" data-view="questions">Open Loops</button>
+          <button class="nav-button" data-view="seeds">Seeds</button>
+          <button class="nav-button" data-view="library">Library</button>
+          <button class="nav-button" data-view="sources">Source Vault</button>
+        </nav>
+
+        <div class="storage-box">
+          <div class="eyebrow">Storage</div>
+          <div id="storageMode" class="storage-mode">Loading</div>
+          <div id="storageDetail" class="storage-detail"></div>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <h1 id="viewTitle">Growth Map</h1>
+            <p id="viewSubtitle">A private self-model maintained from agent artifacts.</p>
+          </div>
+          <div class="status-strip" aria-live="polite">
+            <span id="syncStatus" class="status-pill">Syncing</span>
+            <span id="entryStatus" class="status-pill neutral">0 entries</span>
+          </div>
+        </header>
+
+        <section id="map" class="view active-view">
+          <div id="mapHero"></div>
+
+          <div class="map-grid">
+            <section class="workspace-block wide">
+              <div class="section-title">
+                <h2>Current Movement</h2>
+              </div>
+              <div id="mapMovement" class="movement-list"></div>
+            </section>
+
+            <section class="workspace-block wide">
+              <div class="section-title">
+                <h2>High-Signal Moments</h2>
+              </div>
+              <div id="mapMoments" class="moment-grid"></div>
+            </section>
+
+            <section class="workspace-block">
+              <div class="section-title">
+                <h2>Tensions</h2>
+              </div>
+              <div id="mapTensions" class="stack"></div>
+            </section>
+
+            <section class="workspace-block">
+              <div class="section-title">
+                <h2>Belief Shifts</h2>
+              </div>
+              <div id="mapBeliefs" class="stack"></div>
+            </section>
+
+          </div>
+        </section>
+
+        <section id="threads" class="view">
+          <div id="threadBoard" class="thread-list"></div>
+        </section>
+
+        <section id="questions" class="view">
+          <div id="questionBoard" class="question-list large"></div>
+        </section>
+
+        <section id="seeds" class="view">
+          <div id="seedBoard" class="object-grid large"></div>
+        </section>
+
+        <section id="library" class="view">
+          <div id="artifactList" class="record-list"></div>
+        </section>
+
+        <section id="sources" class="view">
+          <div id="sourceSummary" class="source-summary"></div>
+          <div id="sourceList" class="source-list"></div>
+        </section>
+      </main>
+    </div>
+
+    <dialog id="entryDialog" class="detail-dialog">
+      <button id="closeEntryDialog" class="dialog-close" aria-label="Close">Close</button>
+      <article id="entryDetail" class="detail-content"></article>
+    </dialog>
+
+    <dialog id="artifactDialog" class="detail-dialog">
+      <button id="closeArtifactDialog" class="dialog-close" aria-label="Close">Close</button>
+      <article id="artifactDetail" class="detail-content"></article>
+    </dialog>
+
+    <dialog id="objectDialog" class="detail-dialog">
+      <button id="closeObjectDialog" class="dialog-close" aria-label="Close">Close</button>
+      <article id="objectDetail" class="detail-content"></article>
+    </dialog>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

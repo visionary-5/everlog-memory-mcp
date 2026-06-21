@@ -1,0 +1,17 @@
+.conda/
+.conda-pkgs/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Real journal data and derived indexes must stay local.
+data/
+vault/
+exports/
+*.sqlite
+*.sqlite3
+*.db
+
+# Local config can contain private paths.
+config.json
+
